@@ -1,0 +1,784 @@
+{
+	"info": {
+		"_postman_id": "f260b907-229a-402b-a577-35784d6c1554",
+		"name": "Digitic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26487694"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODMwMjRjMTM2NDgyMGIyZjM0ZjAwNyIsImlhdCI6MTcwMzE4MTU2NiwiZXhwIjoxNzAzMjY3OTY2fQ.mtqX2dRbNX_rrKgiudQU9oY-50DPx9fKqOpA0rP17mo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Nedzmaaa\",\r\n    \"lastName\": \"Brkicccc\",\r\n    \"email\": \"brkicnedzma@gmail.commmm\",\r\n    \"mobile\": \"065754336\",\r\n    \"password\": \"miniii\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Register a user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Nedzmaaa\",\r\n    \"lastName\": \"Brkicccc\",\r\n    \"email\": \"brkicnedzma@gmail.commmm\",\r\n    \"mobile\": \"065754336\",\r\n    \"password\": \"miniii\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}user/all-users"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODJlYTQzODc2N2M1NmRkZjlmN2NhMyIsImlhdCI6MTcwMzA3ODYyNiwiZXhwIjoxNzAzMTY1MDI2fQ.07lVJUHS2ub8uirhYbiD-mDIbC7uN9L8QrL2f9Tkzv0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}user/6582ea438767c56ddf9f7ca3"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}user/65824a562357d9bfde565b7a"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODJlYTQzODc2N2M1NmRkZjlmN2NhMyIsImlhdCI6MTcwMzA4Mjc0MSwiZXhwIjoxNzAzMTY5MTQxfQ.LYB5Zr0NhJ5QIovbmXgPIkTp5tCixN6wsQk7Jk8Cm4w"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Maliiiii\",\r\n    \"lastName\": \"Duraaaaak\",\r\n    \"email\": \"minislatkesmijalice@pashamoj.ba\",\r\n    \"mobile\": \"062225883ljubiiiim\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/edit-user"
+					},
+					"response": []
+				},
+				{
+					"name": "Block a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODMwMjRjMTM2NDgyMGIyZjM0ZjAwNyIsImlhdCI6MTcwMzExNDE4MSwiZXhwIjoxNzAzMjAwNTgxfQ.ScxzU1pLvNXPl7OgqJzarY1eJNeoPYabubCI9i9Lk5Q"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/block-user/6583024c1364820b2f34f007"
+					},
+					"response": []
+				},
+				{
+					"name": "UnBlock a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODMwMjRjMTM2NDgyMGIyZjM0ZjAwNyIsImlhdCI6MTcwMzExNDE4MSwiZXhwIjoxNzAzMjAwNTgxfQ.ScxzU1pLvNXPl7OgqJzarY1eJNeoPYabubCI9i9Lk5Q"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"url": "{{base_url}}user/unblock-user/6583024c1364820b2f34f007"
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}user/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODMwMjRjMTM2NDgyMGIyZjM0ZjAwNyIsImlhdCI6MTcwMzM3OTg1OCwiZXhwIjoxNzAzNDY2MjU4fQ.DO9pncZQXfnZVMER1rOlXgytZTBV5Ot9-lHMn5z5Xp4"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"abc123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/password"
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Nedzma\",\r\n    \"lastName\": \"Brkic\",\r\n    \"email\": \"brkicnedzma@gmail.com\",\r\n    \"mobile\": \"065754336\",\r\n    \"password\": \"miniii\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/forgot-password-token"
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"email\": \"brkicnedzma@gmail.com\",\r\n    \"password\": \"miniiidurak\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/reset-password/f2039df98d941a5ecf645d411efad97d86759131f0023c9c6523403bf236a3ce"
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"brkicnedzma@gmail.com\",\r\n    \"password\":\"miniii\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/adminlogin"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Wishlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYzMDc2NywiZXhwIjoxNzAzNzE3MTY3fQ.jC1FIFqr4w3CNyewYF9HsWff8Ab87_BgyyakLndD3UY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}user/wishlist"
+					},
+					"response": []
+				},
+				{
+					"name": "Save User Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OGI2ZGNhNzhjZjc1N2I3ZDVmNGM2ZCIsImlhdCI6MTcwMzYzNjQzMiwiZXhwIjoxNzAzNzIyODMyfQ.i_3aBWSBSpz13E2mnicy9crXJvCuQoUWFu62pLE7Wd8"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country\":\"Bosna i Hercegovina\",\r\n    \"city\":\"Busovača\",\r\n    \"postalCode\":\"72260\",\r\n    \"street\":\"Ravanjski put 56\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/save-address"
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Cart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzY4NjQzMCwiZXhwIjoxNzAzNzcyODMwfQ.E7GGAn0Aj7hMaOJznaqTZoox3ZDbWzPNl-cxv3d9NHQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cart\":[\r\n        {\r\n            \"_id\":\"658484faa8489b6537d32951\",\r\n            \"count\":3\r\n        },{\r\n            \"_id\":\"65847e55bfa98126bfb17767\",\r\n            \"count\":3\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}user/cart/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cart",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create a Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODMwMjRjMTM2NDgyMGIyZjM0ZjAwNyIsImlhdCI6MTcwMzI4OTIzNSwiZXhwIjoxNzAzMzc1NjM1fQ.sPNJ3-cb6apbd4nPC_wkB-W1InBYVdohhBZeYXm6nOE"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Paradajjjjzzzz\",\r\n    \"price\": \"5\",\r\n    \"quantity\": \"50\",\r\n    \"description\": \"Jeribasma je stara domaća sorta kruške. U nas se gaji od prije pet i više stoljeća. Donijeli su je Turci na Balkan. Nosi njihov naziv-jeribasma, što u prijevodu znači “ne dodiruj me“ što će reći da je jako muhanata/osjetljiva na dodir i uboj. Kad na zemlju padne razbij se. Pod tim imenom poznata je i proširena kao veoma dobra sorta kruške.\",\r\n    \"category\":\"Povrce\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}product"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}product/65844a7be87627b742a39cdf"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}product",
+							"host": [
+								"{{base_url}}product"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "\"Voće\"",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODMwMjRjMTM2NDgyMGIyZjM0ZjAwNyIsImlhdCI6MTcwMzE4MTg5OCwiZXhwIjoxNzAzMjY4Mjk4fQ.Qqfog6OAHjOGXCyaJKJ-cU6Ef90i69qLmGX2b2BFRiw"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Kruska Mednicaaaa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}product/65847e55bfa98126bfb17767"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}product/6584725fe7b0af8e7d4dc2ab"
+					},
+					"response": []
+				},
+				{
+					"name": "Add to Wish List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYxNTE5OCwiZXhwIjoxNzAzNzAxNTk4fQ.ICTg9AiYFHFhdXtBUPv_fxyirTlicqdPPJQo9hflfBc"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"6584861ca8489b6537d3295e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}product/wishlist"
+					},
+					"response": []
+				},
+				{
+					"name": "Rating",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYxNTE5OCwiZXhwIjoxNzAzNzAxNTk4fQ.ICTg9AiYFHFhdXtBUPv_fxyirTlicqdPPJQo9hflfBc"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"star\":2,\r\n    \"comment\":\"Zdravo, zadovoljan sam uslugom. Lp\",\r\n    \"productId\":\"65847efebfa98126bfb17777\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}product/rating"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Create a blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzU5NjU0MSwiZXhwIjoxNzAzNjgyOTQxfQ.f8wyOqnsshwNxzUsaHzqwLjxSaA0GzJ4sUJVPxJRn-E"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Livača\",\r\n    \"category\":\"Slana jela\",\r\n    \"description\":\"Livača, ljevača ili izlivača, ovisno o podneblju je jednostavno i relativno brzo jelo za pripremu. Može su koristiti kao glavni obrok kao prilog mesu ili varivima. Sastojci: 4 krumpira srednje veličine, pola kg brašna, prašak za pecivo, prstohvat soli i papra, 3 žlice ulja. Priprema: Prašak za pecivo umiješat u brašno, zatim dodati sol, papar i izrezani krumpir 3 žlice ulja i 4 dcl vode. Tijesto bi trebalo biti gusto ali tekuće (npr. gušće od tijesta za palačinke). Tijesto izliti u namašćeni pleh i peći 30 minuta na 200°C.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}blog/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzU5NjU0MSwiZXhwIjoxNzAzNjgyOTQxfQ.f8wyOqnsshwNxzUsaHzqwLjxSaA0GzJ4sUJVPxJRn-E"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Bosanska livača\",\r\n    \"category\":\"Slana jela\",\r\n    \"description\":\"Livača, ljevača ili izlivača, ovisno o podneblju je jednostavno i relativno brzo jelo za pripremu. Može su koristiti kao glavni obrok kao prilog mesu ili varivima. Sastojci: 4 krumpira srednje veličine, pola kg brašna, prašak za pecivo, prstohvat soli i papra, 3 žlice ulja. Priprema: Prašak za pecivo umiješat u brašno, zatim dodati sol, papar i izrezani krumpir 3 žlice ulja i 4 dcl vode. Tijesto bi trebalo biti gusto ali tekuće (npr. gušće od tijesta za palačinke). Tijesto izliti u namašćeni pleh i peći 30 minuta na 200°C.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}blog/658ad2f15bb7bb1125ee4f95"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}blog/658ad20c46729d312bbd48ba"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}blog/"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzU5NjU0MSwiZXhwIjoxNzAzNjgyOTQxfQ.f8wyOqnsshwNxzUsaHzqwLjxSaA0GzJ4sUJVPxJRn-E"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}blog/658ad2f15bb7bb1125ee4f95"
+					},
+					"response": []
+				},
+				{
+					"name": "Like a Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzU5NjU0MSwiZXhwIjoxNzAzNjgyOTQxfQ.f8wyOqnsshwNxzUsaHzqwLjxSaA0GzJ4sUJVPxJRn-E"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blogId\":\"658ae33ad6d59c790bfa5aee\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}blog/likes"
+					},
+					"response": []
+				},
+				{
+					"name": "Dislike a Blog",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzU5NjU0MSwiZXhwIjoxNzAzNjgyOTQxfQ.f8wyOqnsshwNxzUsaHzqwLjxSaA0GzJ4sUJVPxJRn-E"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blogId\":\"658ad20c46729d312bbd48ba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}blog/dislikes"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Category",
+			"item": [
+				{
+					"name": "Add Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYwODMzNSwiZXhwIjoxNzAzNjk0NzM1fQ.DeAILf02An1JgV7p9PPiVPHT7YsA1grsX8PYK97ZC4Y"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Povrće\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}productcategory/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYwODMzNSwiZXhwIjoxNzAzNjk0NzM1fQ.DeAILf02An1JgV7p9PPiVPHT7YsA1grsX8PYK97ZC4Y"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Povrće\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}productcategory/658b0380ffc912f53497ac51"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYwODMzNSwiZXhwIjoxNzAzNjk0NzM1fQ.DeAILf02An1JgV7p9PPiVPHT7YsA1grsX8PYK97ZC4Y"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}productcategory/658b0380ffc912f53497ac51"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}productcategory/658b06947eb165e2636c2c20"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}productcategory/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog Category",
+			"item": [
+				{
+					"name": "Add Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYwODMzNSwiZXhwIjoxNzAzNjk0NzM1fQ.DeAILf02An1JgV7p9PPiVPHT7YsA1grsX8PYK97ZC4Y"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Slatka jela\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}blogcategory/"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYwODMzNSwiZXhwIjoxNzAzNjk0NzM1fQ.DeAILf02An1JgV7p9PPiVPHT7YsA1grsX8PYK97ZC4Y"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Slađahna jela\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}blogcategory/658b12a2fca8f64c625cfd24"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODk5YWZiNzQwOWQzY2NjMGViZmIxYyIsImlhdCI6MTcwMzYwODMzNSwiZXhwIjoxNzAzNjk0NzM1fQ.DeAILf02An1JgV7p9PPiVPHT7YsA1grsX8PYK97ZC4Y"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}blogcategory/658b12a2fca8f64c625cfd24"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}blogcategory/658b129afca8f64c625cfd20"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}blogcategory/"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
